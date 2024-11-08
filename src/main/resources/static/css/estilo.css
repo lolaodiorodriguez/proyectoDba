@@ -1,0 +1,357 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;  
+}
+.login-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-left h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+.login-left form {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-left label {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.login-left input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+.login-left button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0e1938;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-left button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.login-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*SECCION PRINCIPAL*/
+header {
+
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-btn {
+    background-color: #0e1938;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    padding-top: 5%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.principal-texto{
+    color: #9d9393;
+    font-size: 28px;
+}
+.left-side {
+    width: 50%;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    color: black;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #971858; 
+}
+
+.principal-texto{
+        color:  9d9393;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+/*SECCION PRINCIPAL DE LOS HOTELES*/
+
+
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   
+}
+
+
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-20%); 
+    width: 60%;
+    height: 60%; 
+    background-image: url('https://img.freepik.com/vector-gratis/ilustracion-concepto-torre-hotel_114360-14042.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 48px;
+    color: #971858;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 50px;
+}
+
+.search-bar i {
+    color: #333;
+    margin-right: 8px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #555;
+    background-color: transparent;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #0e1938;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1a2a4b;
+}
+
+.titulo{
+    margin: 50px;
+}
+
+
+/*SECCION PARA MODIFICAR EL REGISTRO*/
+
+
+.container-registro {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    width: 40%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.left-section h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hotel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right-section {
+    width: 60%;
+}
+
+.right-section h2 {
+    color: #971858;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-button {
+    padding: 12px;
+    background-color: #971858;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #7a1245;
+}
+
