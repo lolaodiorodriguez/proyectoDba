@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación - Hoteles Buena Vista</title>
+    <link rel="stylesheet" href="/css/estilo.css"> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-reservacion">
+        <h1 class="title">Reservacion de Clientes</h1>
+        <a href="/principal/principal"><button class="reservation-btn">Volver</button></a>
+        
+    </header>
+
+    <!-- Formulario de Reservación -->
+    <main class="main-container">
+        <section class="reservation-form">
+            <form action="/reservacion/confirmacion" method="POST">
+                <label for="identification">Identificación del cliente</label>
+                <input type="text" id="identification" placeholder="Número de identificación">
+
+                <label for="hotel">Escoger el hotel a reservar</label>
+                <input type="text" id="hotel" placeholder="Nombre del hotel">
+                
+                <!-- Contenedor para opciones de habitación y pago -->
+                <div class="reservacion1">
+                    <div>
+                        <label for="room-type">Tipo de habitación</label>
+                        <select id="room-type">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="simple">Simple</option>
+                            <option value="doble">Doble</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="payment-method">Método de pago</label>
+                        <select id="payment-method">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="credit-card">Tarjeta de crédito</option>
+                            <option value="debit-card">Tarjeta de débito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Transferencia bancaria</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="reservacion-fechas">
+                    <div>
+                        <label for="check-in">Fecha de entrada</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div>
+                        <label for="check-out">Fecha de salida</label>
+                        <input type="date" id="check-out">
+                    </div>
+                </div>
+
+             
+                <a href="/reservacion/confirmacion">
+        <button type="submit" class="submit-btn">Realizar reserva</button>
+    </a>
+            </form>
+        </section>
+   </main>
+</body>
+</html>

@@ -6,16 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/cliente")
-public class ClienteController {
-
+@RequestMapping("/proveedor")
+public class ProveedorController {
     @GetMapping("/main")
-    public String mostrarMainHotel() {
-        return "cliente/main"; 
+    public String mostrarMainProveedor() {
+        return "proveedor/main"; 
     }
     
     @GetMapping("/registro")
-    public String registrarHotel() {
-        return "cliente/registro"; 
+    public String registrarProveedor() {
+        return "proveedor/registro"; 
     }
 }

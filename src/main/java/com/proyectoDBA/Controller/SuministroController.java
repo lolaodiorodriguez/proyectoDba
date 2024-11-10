@@ -1,21 +1,23 @@
 
 package com.proyectoDBA.Controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/cliente")
-public class ClienteController {
-
+@RequestMapping("/suministro")
+public class SuministroController {
     @GetMapping("/main")
     public String mostrarMainHotel() {
-        return "cliente/main"; 
+        return "suministro/main"; 
     }
     
-    @GetMapping("/registro")
+    @GetMapping("/lista")
     public String registrarHotel() {
-        return "cliente/registro"; 
+        return "suministro/lista"; 
     }
+    
+    
 }

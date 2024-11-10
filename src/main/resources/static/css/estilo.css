@@ -227,6 +227,7 @@ h1 {
     width: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     height: 50px;
+   
 }
 
 .search-bar i {
@@ -245,6 +246,7 @@ h1 {
 
 .search-bar input::placeholder {
     color: #aaa;
+    border:none;
 }
 
 .action-buttons {
@@ -286,16 +288,27 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
 }
+
 
 .left-section, .right-section {
     padding: 20px;
 }
 
 .left-section {
-    width: 40%;
+   width: 40%;
     background-color: #f9f9f9;
     text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
 }
 
 .left-section h1 {
@@ -311,7 +324,7 @@ h1 {
 }
 
 .right-section {
-    width: 60%;
+    width: 50%;
 }
 
 .right-section h2 {
@@ -335,7 +348,6 @@ input[type="text"],
 input[type="email"] {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -353,5 +365,318 @@ input[type="email"] {
 
 .register-button:hover {
     background-color: #7a1245;
+}
+
+
+/*SECCION PRINCIPAL DE LOS CLIENTE - REGISTRO-MODIFICACION Y BUSQUEDA*/
+
+.background-image-cliente {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-20%); 
+    width: 60%;
+    height: 60%; 
+    background-image: url('https://img.freepik.com/vector-gratis/concepto-retroalimentacion-plana-organica-ilustrado_23-2148952275.jpg?t=st=1731174532~exp=1731178132~hmac=86b3f4d44ee9b4a7ba76dba54800680347efc928b7d0ab540ba412c40b6b6102&w=900');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+
+/*REGISTRO DE PROVEEDORES*/
+.header-reservacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    border-radius: 8px;
+}
+
+.header-reservacion .title {
+    font-size: 24px;
+}
+
+.header-reservacion .reservation-btn {
+    background-color: #971858;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+}
+
+.header-reservacion .reservation-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Formulario de reservación */
+.reservation-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="date"],
+.reservation-form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el contenedor de selectores */
+.reservacion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    background-color: #971858;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #7a1245;
+}
+
+.reservacion-fechas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/*CONFIRMACION DE LA RESERVA*/
+
+.main-container-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+.confirmation-details {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.confirmation-details h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.confirmation-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.confirmation-details ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.confirmation-details li {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.confirmation-details li strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.confirmation-details li span {
+    font-weight: normal;
+    color: #777;
+}
+
+.confirmation-details button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirmation-details button:hover {
+    background-color: #45a049;
+}
+
+
+/*SECCION DE SUMINISTRO*/
+
+.right-section-suministro {
+    flex: 2;
+    padding: 20px;
+}
+
+.right-section-suministro h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Hotel Search */
+.hotel-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hotel-search label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#hotel-search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #971858;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+.suministro-table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+#suministro-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#suministro-table th, #suministro-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#suministro-table th {
+    background-color: #971858;
+    color: white;
+    font-weight: bold;
+}
+
+#suministro-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    margin-top: 20px;
+}
+
+
+.action-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #971858; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.action-buttons button:hover {
+    background-color: #a3165d; 
+    transform: translateY(-2px); 
+}
+
+
+.action-buttons button:active {
+    background-color: #003d80; 
+    transform: translateY(1px); 
+}
+
+
+#add-button {
+    background-color: #971858; 
+}
+
+
+#add-button:active {
+    background-color: #1e7e34; 
+}
+
+#modify-button {
+    background-color: #0e1938; 
+   
 }
 

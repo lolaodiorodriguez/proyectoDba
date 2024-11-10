@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Hotel - Hoteles Buena Vista</title>
+    <link rel="stylesheet" href="/css/estilo.css"> 
+</head>
+<body>
+    <div class="container-registro">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>Hoteles Buena Vista</h1>
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-vector-concepto-abstracto-centro-logistico-centro-logistica-global-almacen-comercial-centro-distribucion-gestion-cadena-suministro-metafora-abstracta-optimizacion-costes-transporte_335657-1791.jpg" alt="Imagen del Hotel" class="hotel-image">
+        </div>
+        
+        <!-- Right Section for Supply -->
+        <div class="right-section-suministro">
+            <h2>Gestión de Suministros por Hotel</h2>
+
+            <!-- Hotel Search Section -->
+            <div class="hotel-search">
+                <label for="hotel-search-input">Buscar Hotel:</label>
+                <input type="text" id="hotel-search-input" placeholder="Ingrese el nombre del hotel">
+                <button id="search-button">Buscar</button>
+            </div>
+            
+            <!-- Supplies Table -->
+            <div class="suministro-table-container">
+                <table id="suministro-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre Suministro</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Proveedor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Papel higiénico</td>
+                            <td>50</td>
+                            <td>20.5</td>
+                            <td>Proveedor A</td>
+                        </tr>
+                        <tr>
+                            <td>Toallas</td>
+                            <td>30</td>
+                            <td>15.0</td>
+                            <td>Proveedor B</td>
+                        </tr>
+                        <tr>
+                            <td>Jabón</td>
+                            <td>100</td>
+                            <td>5.75</td>
+                            <td>Proveedor C</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="action-buttons">
+                <a href="/suministro/main"><button id="add-button">Agregar</button></a>
+                <button id="modify-button">Modificar</button>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
